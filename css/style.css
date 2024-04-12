@@ -59,7 +59,7 @@ h1 {
 
 form {
  margin-top: 35px;
- margin-bottom: 30px;  
+ margin-bottom: 27px;  
 }
 
 form button {
@@ -107,6 +107,7 @@ font-size: 1.04em;
     width: 800px;
 display: flex;
 justify-content: space-between;
+margin-bottom:30px;
 }
 
 .filtres p {
@@ -115,7 +116,11 @@ justify-content: space-between;
 }
 
 .filtres button {
+    position: relative;
+    top:5px;
     height:45px;
+    padding-left:14px;
+    padding-right: 30px;
 background-color: white;
 border-radius: 60px;
 border: 2px solid #D9D9D9;
@@ -123,9 +128,23 @@ font-weight: 600;
 font-size: 1.1em; 
 }
 
+.filtres button p {
+    position: relative;
+    top:-10px;
+    left: 10px;
+}
+
+.filtres i {
+position: relative;
+left:-10px;
+}
+
 .filtres button:hover {
 background-color: var(--main-bg-color);
+}
 
+.info {
+    margin-bottom: 30px;
 }
 
 .info p {
