@@ -104,7 +104,7 @@ font-size: 1.04em;
 }
 
 .filtres {
-    width: 800px;
+    width: 780px;
 display: flex;
 justify-content: space-between;
 margin-bottom:30px;
@@ -213,6 +213,42 @@ padding: 0.45em 0.75em;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements .card {
+    margin-top: 28px;
+    width:30%;
+}
+
+.hebergements img {
+    height: 115px;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements .card-content {
+    padding-left: 10px;
+}
+
+.hebergements .card-title {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.hebergements .card-subtitle {
+    font-size: 0.86em;
+    margin: 0;
+}
+
+.hebergements .card-rating {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /****** Populaires ***********/
