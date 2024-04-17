@@ -303,7 +303,24 @@ padding: 0.45em 0.75em;
 }
 
 
+.activites {
+padding-top: 50px;
+}
 
+.activites-cards card {
+    width: 20%;
+}
+
+.activites-cards img {
+    height: 400px;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites h2 {
+margin-bottom: 25px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
