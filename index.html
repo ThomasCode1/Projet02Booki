@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +26,9 @@
             </nav>
         </header>
         <main>
+<div class="mobile-margin">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+            <p class="subheader">En plein centre-ville ou en pleine nature</p>
                 <form method="get" action="">
                     <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
                     <input type="text" name="ville" id="ville" placeholder="Entrez une ville" value="Marseille, France"size="20" required>
@@ -43,7 +44,7 @@
     <p><i class="fa-solid fa-money-bill-wave"></i>Économique</p>
 </button>
 <button type="submit">
-    <p><i class="fa-solid fa-person"></i>Familial</p>
+    <p class="familial"><i class="fa-solid fa-person"></i>Familial</p>
 </button>
 <button type="submit">
     <p><i class="fa-solid fa-heart"></i>Romantique</p>
@@ -54,8 +55,9 @@
                 </div>
 </div>
                 <div class="info">
-                    <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+</div>
               <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>

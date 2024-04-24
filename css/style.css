@@ -13,6 +13,14 @@
     color: var(--main-color);
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -42,7 +50,6 @@ nav a {
     }
 
 nav a:hover {
-display: block;
 color: var(--main-color);
 border-top: 1px solid var(--main-color);
 }
@@ -51,9 +58,11 @@ h1 {
   font-size: 1.4em;  
 }
 
+/****** Search bar ***********/
 form {
  margin-top: 35px;
  margin-bottom: 27px;  
+display:flex;
 }
 
 form button {
@@ -97,12 +106,13 @@ font-weight: 600;
 font-size: 1.04em; 
 }
 
+/****** Filtres ***********/
 .filtres {
 display:flex;
 }
 
 .filtres-buttons {
-    width: 780px;
+    width: 680px;
 display: flex;
 justify-content: space-between;
 margin-bottom:30px;
@@ -143,12 +153,14 @@ background-color: var(--main-bg-color);
 }
 
 .info {
-    margin-bottom: 30px;
+padding-left: 10px;
+margin-bottom:-37px;
 }
 
 .info p {
 position: relative;
-padding-left: 10px;
+top: -37px;
+left:25px;
 }
 
 .fa-info {
@@ -159,14 +171,6 @@ display: inline-block;
 border-radius: 50%;
 border: 2px solid var(--main-bg-color);
 padding: 0.45em 0.75em;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    margin: 0 auto;
 }
 
 .section-title {
@@ -218,6 +222,10 @@ padding: 0.45em 0.75em;
 .hebergements-cards > a {
 display:block;
 width:calc((100% - 46px) / 3);
+}
+
+.hebergements-cards i {
+margin-right:-3px;
 }
 
 .hebergements .card {
@@ -279,6 +287,10 @@ width:calc((100% - 46px) / 3);
     margin-top: 33px;
 }
 
+.populaires-cards i {
+margin-right:-4px;
+}
+
 .populaires-cards img {
     width: 33%;
     height: 126px;
@@ -308,7 +320,7 @@ width:calc((100% - 46px) / 3);
     margin-bottom: 5px;
 }
 
-
+/****** Activites ***********/
 .activites {
 padding-top: 50px;
 padding-left:30px;
@@ -381,10 +393,6 @@ font-size:1.13em;
 flex-direction:column;
 }
 
-.filtres-buttons {
-width: 680px;
-}
-
 form {
   margin-bottom: 10px;  
 }
@@ -427,11 +435,59 @@ form {
 }
 
 /* Small devices (phones, less than 768px) */
-form {
-display:flex;
+@media (max-width: 767.98px) {
+
+body {
+margin:0px;
 }
 
-@media (max-width: 767.98px) {
+.main-container {
+    width: 100%;
+    padding: 0 0px;
+    }
+
+header {
+flex-direction:column;
+}
+
+header img {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+margin-top:10px;
+margin-bottom:20px;
+}
+
+nav a {
+width:100%;
+text-align:center;
+margin-left: auto;
+margin-right:auto;
+padding-top:0px;
+padding-bottom:16px;
+border-top:0 ;
+border-bottom: 2px solid var(--main-bg-color);
+}
+
+nav a:hover {
+border-top:0;
+border-bottom: 2px solid var(--main-color);
+
+}
+
+.mobile-margin {
+margin-left:20px;
+margin-right:10px;
+}
+
+h1 {
+text-align:center;
+}
+
+.subheader {
+text-align:center;
+}
+
 input[type=text] {
 width:250px;
 }
@@ -453,5 +509,91 @@ width:250px;
     input[type=submit] {
         display:none;
         }
+
+.filtres-buttons {
+width:100%;
+height:140px;
+flex-wrap:wrap;
+justify-content:space-around;
+margin-bottom:0px;
+}
+
+.filtres-buttons button {
+width:165px;
+height:50px;
+font-size:0.9em;
+}
+
+.filtres-buttons button p {
+    top:-3px;
+}
+
+.filtres-buttons i {
+font-size:1.4em;
+top:2px;
+}
+
+.filtres-buttons .familial {
+left:-5px;
+}
+
+.info {
+margin-top:20px;
+max-width:300px;
+}
+
+.info p {
+position: relative;
+top: -50px;
+left:25px;
+}
+
+.hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+.populaires-cards {
+        flex-direction: column;
+    }
+
+
+.populaires-cards .card {
+width:330px;
+height:135px;;
+margin-top: 16px;
+}
+
+.populaires-cards img {
+height:135px;
+}
+
+.populaires-cards i {
+position:relative;
+top:5px;
+}
+
+.populaires {
+margin-top:0px;
+}
+
+.hebergements-and-populaires .populaires {
+border-radius:0px;
+}
+
+.hebergements-and-populaires .hebergements {
+background-color:white;
+}
+
+.hebergements-cards > a {
+width:330px;
+}
+
+.hebergements .card {
+margin-top:0px;
+}
+
+.hebergements-cards {
+margin-top:14px;
+}
 
 }
