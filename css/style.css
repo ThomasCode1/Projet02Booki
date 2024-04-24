@@ -596,4 +596,31 @@ margin-top:0px;
 margin-top:14px;
 }
 
+.activites-cards {
+flex-direction:column;
+gap:0px;
+}
+
+.activites-cards .card {
+width:330px;
+}
+
+.footer-column {
+width:100%;
+margin-bottom:20px;
+}
+
+.footer-links {
+flex-direction:column;
+padding-left:30px;
+}
+
+footer a {
+font-size:1.0em;
+}
+
+footer h3 {
+font-size:1.23em;
+}
+
 }
