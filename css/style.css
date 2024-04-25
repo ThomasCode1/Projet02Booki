@@ -137,9 +137,8 @@ font-weight: 600;
 font-size: 1.1em; 
 }
 
-.filtres-buttons button p {
+.filtres-buttons button span {
     position: relative;
-    top:-10px;
     left: 10px;
 }
 
@@ -522,10 +521,6 @@ margin-bottom:0px;
 width:165px;
 height:50px;
 font-size:0.9em;
-}
-
-.filtres-buttons button p {
-    top:-3px;
 }
 
 .filtres-buttons i {
